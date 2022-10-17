@@ -35,7 +35,14 @@ content{
 }
 
 .guzior {
+    position: relative;
 background: #E50000;
+color: #EEEEEE;
+font-family: sans-serif;
+font-style: Helvetica;
+font-weight: 700;
+font-size: 15px;
+line-height: 18px;
 box-shadow: 1px 5px 25px rgba(229, 0, 0, 0.15);
 border-radius: 3px;
 display: block;
@@ -47,24 +54,14 @@ margin-top: 38px;
 margin-bottom: 62px;
 padding: 0;
 border: none;
-
+opacity: 0.6;
+transition: 0.3s;
+}
+.guzior:hover{
+    letter-spacing: 0,25em;
 
 }
 
-.loguj{
-font-family: sans-serif;
-font-style: Helvetica;
-font-weight: 700;
-font-size: 15px;
-line-height: 18px;
-
-text-transform: uppercase;
-
-color: #EEEEEE;
-display: block;
-margin-left: auto;
-margin-right: auto
-}
 
 .pl {
     display: block;
