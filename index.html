@@ -17,14 +17,18 @@
             <form>
             <p class="pl">Panel Logowania</p>
             <label class="mail" for="mail"><b>EMail</b></label>
-            <input class="mailbox" type="text" placeholder="jan.kowalski@gmail.com" name="mail" required>
+            <input class="mailbox" id="mail" type="text" placeholder="jan.kowalski@gmail.com" name="mail" required>
 
             <label class="haslo" for="haslo"><b>Password</b></label>
-            <input class="maslo" type="text" placeholder="*********" name="haslo" required>
+            <input class="maslo" id="haslo" type="text" placeholder="*********" name="haslo" required>
             <button class="guzior" type="submit"><p class="loguj">ZALOGUJ</p></button>
             </form>
         </div>
     </div>
+
+    <script>
+         console.log(document.getElementById("mail").value);
+    </script>
   <!-- może nie identycznie, ale się starałem, zamiast roboto dalem font helvetica,
      myslinik w emailu mi lamal caly tekst wiec z niego zrezygnowalem -->
 </body>
