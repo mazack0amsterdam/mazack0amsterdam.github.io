@@ -35,7 +35,7 @@ content{
 
 .guzior {
 background: #E50000;
-box-shadow: 0px 2px 15px rgba(229, 0, 0, 0.15);
+box-shadow: 1px 5px 25px rgba(229, 0, 0, 0.15);
 border-radius: 3px;
 display: block;
 margin-left: auto;
@@ -44,6 +44,8 @@ width: 346px;
 height: 62px;
 margin-top: 38px;
 margin-bottom: 62px;
+padding: 0;
+border: none;
 
 
 }
