@@ -7,14 +7,13 @@ window.addEventListener('DOMContentLoaded', function(e) {
             var mailFeedback = document.getElementById("mail-feedback");
             var passwordFeedback = document.getElementById("password-feedback");
             var labelFeedback = document.getElementById('label')
-            var placeholderFeedback = document.getElementById('placeholder')
+            var placeholderFeedback = document.getElementById('input::placeholder')
 
             if(validate.empty(mail.value)) {
                 mailFeedback.innerText="Pole e-mail nie może byc puste.";
                 mailFeedback.classList.remove('hidden')
                 mail.classList.add('parowka')
-                mail.classList.add('.p::-webkit-input-placeholder')
-                mail.classList.add('has-error')
+                placeholderFeedback.classList.add('input .has-error::placeholder')
                 labelFeedback.classList.remove('label')
                 labelFeedback.classList.add('paroweczka')
             }
