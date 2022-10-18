@@ -184,3 +184,11 @@ input::placeholder {
     input .has-error::placeholder {
     color: #E50000;
     }
+    .parowka::placeholder{
+        color: #E50000;
+    }
+
+    .mailbox::placeholder{
+        color: #777777;
+
+    }
