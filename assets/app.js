@@ -11,8 +11,7 @@ window.addEventListener('DOMContentLoaded', function(e) {
             if(validate.empty(mail.value)) {
                 mailFeedback.innerText="Pole e-mail nie może byc puste.";
                 mailFeedback.classList.remove('hidden')
-                mail.classList.add('parowka')
-                mail.classList.add('has-error')
+                mail.classList.add('parowka::placeholder')
                 labelFeedback.classList.remove('label')
                 labelFeedback.classList.add('paroweczka')
             }
