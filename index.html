@@ -14,21 +14,20 @@
                 <img src="assets/img/logotyp.png" class="logo">
             </div>
 
-        <div class="midfield">
-            <form id="formularz" name="formularz" method="post">
-            <p class="pl">Panel Logowania</p>
-            <label class="label" for="mail"><b>E-Mail</b></label>
-            <input class="mailbox" id="mailbox" type="text" placeholder="    jan.kowalski@gmail.com" name="mailbox" required>
-
-            <label class="label" for="haslo"><b>Password</b></label>
-            <input class="passwordbox" id="passwordbox" type="text" placeholder="    *********" name="passwordbox" required>
-            <button class="guzior" type="submit">ZALOGUJ</button>
-            </form>
-        </div>
+            <div class="midfield">
+                <form id="formularz" name="formularz" method="post">
+                <p class="pl">Panel Logowania</p>
+                <label class="label" id="label" for="mail"><b>E-Mail</b></label>
+                <input class="mailbox" id="mailbox" type="text" placeholder="    jan.kowalski@gmail.com" name="mailbox">
+                <p class="small hidden" id="mail-feedback"></p>
+    
+                <label class="label" id="label" for="haslo"><b>Password</b></label>
+                <input class="passwordbox" id="passwordbox" type="text" placeholder="    *********" name="passwordbox">
+                <p class="small hidden" id="password-feedback"></p>
+                <button class="guzior" type="submit">ZALOGUJ</button>
+                </form>
+            </div>
     </div>
 
-
-  <!-- może nie identycznie, ale się starałem, zamiast roboto dalem font helvetica,
-     myslinik w emailu mi lamal caly tekst wiec z niego zrezygnowalem -->
 </body>
 </html>
