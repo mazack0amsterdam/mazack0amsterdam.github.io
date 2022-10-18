@@ -3,7 +3,9 @@ window.addEventListener('DOMContentLoaded', function(e) {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
             var mail = document.getElementById('mailbox');
+            console.log("e-mail: "+mail.value);
             var password = document.getElementById('passwordbox');
+            console.log("haslo: "+password.value);
             var mailFeedback = document.getElementById("mail-feedback");
             var passwordFeedback = document.getElementById("password-feedback");
             var labelFeedback = document.getElementById('label')
@@ -11,7 +13,7 @@ window.addEventListener('DOMContentLoaded', function(e) {
             if(validate.empty(mail.value)) {
                 mailFeedback.innerText="Pole e-mail nie może byc puste.";
                 mailFeedback.classList.remove('hidden')
-                mail.classList.add('parowka::placeholder')
+                mail.classList.add('parowka')
                 labelFeedback.classList.remove('label')
                 labelFeedback.classList.add('paroweczka')
             }
@@ -32,7 +34,6 @@ window.addEventListener('DOMContentLoaded', function(e) {
                 labelFeedback.classList.add('paroweczka')
 
             }
-
 
             
     });
@@ -55,3 +56,7 @@ var validate = {
 }
 
 
+// to na dole jest do walidacji, jutro trzeba ogarnac tak:
+// stylowanie pozostalych boxow
+// ogarniecie gotowych pakietow do wysylki na serwer
+//i to tyle chyba chyba essss pdw pdw pozdrowienia do wiezieniea
