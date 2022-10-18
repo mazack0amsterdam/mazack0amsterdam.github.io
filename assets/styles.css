@@ -9,6 +9,10 @@ content{
     margin-right: auto;
 }
 
+.mailbox.parowka::placeholder {
+    color: #E50000;
+}
+
 
 .midfield {
     box-sizing: border-box;
@@ -176,19 +180,3 @@ line-height: 14px;
 color: #E50000;
 
 }
-input::placeholder {
-    color: #777777;
-    transition: color .5s ease-in-out;
-    }
-    
-    input .has-error::placeholder {
-    color: #E50000;
-    }
-    .parowka::placeholder{
-        color: #E50000;
-    }
-
-    .mailbox::placeholder{
-        color: #777777;
-
-    }
