@@ -93,7 +93,7 @@ height: 62px;
 background: #FFFFFF;
 border: 1px solid #DDDDDD;
 border-radius: 3px;
-margin-bottom: 36px;
+margin-bottom: 20px;
 }
 
 .label {
@@ -110,9 +110,6 @@ font-style: Helvetica;
 font-weight: 400;
 font-size: 12px;
 line-height: 14px;
-
-
-color: #000000;
 }
 
 .passwordbox {
@@ -129,3 +126,61 @@ background: #FFFFFF;
 border: 1px solid #DDDDDD;
 border-radius: 3px;
 }
+
+
+.small {
+font-family: sans-serif;
+font-style: Helvetica;
+    font-size: 0.75rem;
+    color: red;
+}
+.hidden {
+    display: none;
+}
+
+
+
+.parowka{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+
+
+width: 346px;
+height: 62px;
+
+background: #FFFFFF;
+border: 1px solid #E50000;
+color: #E50000;
+border-radius: 3px;
+}
+
+
+.paroweczka{
+    display: block;
+    padding-left: 2%;
+    margin-right: auto;
+    padding-top: 2%;
+
+width: 53px;
+height: 14px;
+
+font-family: sans-serif;
+font-style: Helvetica;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+
+
+color: #E50000;
+
+}
+input::placeholder {
+    color: #777777;
+    transition: color .5s ease-in-out;
+    }
+    
+    input .has-error::placeholder {
+    color: #E50000;
+    }
