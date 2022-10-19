@@ -4,6 +4,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title "p_logowania"></title>
       <link rel="stylesheet" href="assets/styles.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
       <script src="assets/app.js"></script>
    </head>
    <body>
@@ -20,7 +23,7 @@
                <label class="label" id="label2" for="haslo"><b>Password</b></label>
                <input class="passwordbox" id="passwordbox" type="text" placeholder="    *********" name="passwordbox">
                <p class="small hidden" id="password-feedback"></p>
-               <button class="guzior" type="submit">ZALOGUJ</button>
+               <button class="button" onclick="this.classList.toggle('button--loading')" type="submit"><span class="button_text">ZALOGUJ</span></button>
             </form>
          </div>
       </div>
