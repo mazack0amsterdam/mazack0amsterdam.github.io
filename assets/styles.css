@@ -12,15 +12,22 @@ content{
 .mailbox.parowka::placeholder {
     color: #E50000;
 }
+.passwordbox.parowka::placeholder {
+    color: #E50000;
+}
+
 
 
 .midfield {
     box-sizing: border-box;
+    width: 469px;
+    height: 484px;
     display: block;
-    padding: 30px;
+    padding: 60px;
     margin: auto;
+    padding-right: 5%;
     max-width: fit-content;
-    border: 2px solid #DDDDDD;
+    border: 1px solid #DDDDDD;
     border-radius: 3px;
     background: #FFFFFF;
 }
@@ -29,7 +36,7 @@ content{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-top: 120px;
     max-width: 280px;
     width: 100%;
@@ -70,12 +77,12 @@ border: none;
 
 .pl {
     display: block;
-    padding-left: 20%;
+    padding-left: 15%;
     margin-right: 20%;
-    padding-top: 1%;
-    margin-bottom: 48px;
+    margin-top: 2px;
+    margin-bottom: 38px;
 font-weight: 700;
-font-size: 28px;
+font-size: 30px;
 line-height: 38px;
 font-family: sans-serif;
 font-style: Helvetica;
@@ -97,10 +104,26 @@ height: 62px;
 background: #FFFFFF;
 border: 1px solid #DDDDDD;
 border-radius: 3px;
-margin-bottom: 20px;
+margin-bottom: 28px;
 }
 
 .label {
+    display: block;
+    padding-right: 30%;
+    margin-right: auto;
+    padding-top: 1%;
+
+width: 53px;
+height: 14px;
+
+font-family: sans-serif;
+font-style: Helvetica;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+}
+
+.serdel {
     display: block;
     padding-left: 2%;
     margin-right: auto;
@@ -114,6 +137,7 @@ font-style: Helvetica;
 font-weight: 400;
 font-size: 12px;
 line-height: 14px;
+color: #E50000;
 }
 
 .passwordbox {
@@ -121,6 +145,7 @@ line-height: 14px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
+    margin-bottom: 28px;
 
 
 width: 346px;
@@ -179,4 +204,7 @@ line-height: 14px;
 
 color: #E50000;
 
+}
+.mailboxparowka{
+    color: #E50000;
 }
