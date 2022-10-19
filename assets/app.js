@@ -10,6 +10,7 @@ window.addEventListener('DOMContentLoaded', function(e) {
            var passwordFeedback = document.getElementById("password-feedback");
            var labelFeedback = document.getElementById('label');
            var labelFeedback2 = document.getElementById('label2')
+           var buttonFeedback = document.getElementById('guzior')
 
            if(validate.empty(mail.value)) {
                mailFeedback.innerText="Pole e-mail nie może byc puste.";
@@ -35,6 +36,8 @@ window.addEventListener('DOMContentLoaded', function(e) {
                labelFeedback2.classList.add('paroweczka')
            }
 
+           if(object.onclick = function(){myScript};)
+
            
    });
 })
@@ -46,12 +49,16 @@ var validate = {
        return !value.length 
    },
 
+   minLength: function(value, min) {
+       return value.length <= min
+   },
    isMail: function(mail) {
       var re = /\S+@\S+\.\S+/;
       return re.test(mail);
    },
 
-   minLength: function(value, min) {
-       return value.length <= min
+   loading: function(loading){
+      
    }
+
 }
