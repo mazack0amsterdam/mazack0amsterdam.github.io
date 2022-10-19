@@ -9,8 +9,7 @@ window.addEventListener('DOMContentLoaded', function(e) {
            var mailFeedback = document.getElementById("mail-feedback");
            var passwordFeedback = document.getElementById("password-feedback");
            var labelFeedback = document.getElementById('label');
-           var labelFeedback2 = document.getElementById('label2')
-           var buttonFeedback = document.getElementById('guzior')
+           var labelFeedback2 = document.getElementById('label2');
 
            if(validate.empty(mail.value)) {
                mailFeedback.innerText="Pole e-mail nie może byc puste.";
@@ -55,4 +54,9 @@ var validate = {
       return re.test(mail);
    },
 
+   loading: function(loading){
+
+   }
+
 }
+
