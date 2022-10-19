@@ -36,8 +36,6 @@ window.addEventListener('DOMContentLoaded', function(e) {
                labelFeedback2.classList.add('paroweczka')
            }
 
-           if(object.onclick = function(){myScript};)
-
            
    });
 })
@@ -56,9 +54,5 @@ var validate = {
       var re = /\S+@\S+\.\S+/;
       return re.test(mail);
    },
-
-   loading: function(loading){
-      
-   }
 
 }
