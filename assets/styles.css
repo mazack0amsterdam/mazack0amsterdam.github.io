@@ -3,6 +3,7 @@ body {
     background-color: #FFFFFF;
 }
 
+
 content{
     display: block;
     margin-left: auto;
@@ -34,10 +35,10 @@ content{
 
 .logo {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 412px;
+    margin-right: 552px;
     margin-bottom: 20px;
-    margin-top: 120px;
+    margin-top: 100px;
     max-width: 280px;
     width: 100%;
     max-height: 63px;
@@ -45,7 +46,26 @@ content{
     
 }
 
-.guzior {
+
+
+
+.pl {
+    display: block;
+    margin: 10px;
+    padding-left: 15%;
+font-weight: 750;
+font-size: 30px;
+line-height: 18px;
+font-family: 'Roboto@wght700', sans-serif;
+
+
+color: #000000;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+  .button {
     position: relative;
 background: #E50000;
 color: #EEEEEE;
@@ -65,34 +85,60 @@ margin-top: 38px;
 margin-bottom: 62px;
 padding: 0;
 border: none;
-    transition: all .2s ease-in-out;
-
-}
-.guzior:hover {box-shadow: 5px 10px 50px rgba(229, 0, 0, 0.15);
- transform: translateY(-5px);
-
 
 }
 
-
-.pl {
-    display: block;
-    padding-left: 15%;
-    margin-right: 20%;
-    margin-top: 2px;
-    margin-bottom: 38px;
-font-weight: 700;
-font-size: 30px;
-line-height: 38px;
-font-family: sans-serif;
-font-style: Helvetica;
-
-
-color: #000000;
+.button_text {
+    color: #EEEEEE;
+line-height: 18px;
 display: block;
-margin-left: auto;
-margin-right: auto;
+margin-top: 22px;
+margin-bottom: 22px;
+width: 346px;
+height: 62px;
+padding: 0;
+border: none;
 }
+
+
+.button:active {
+    background: #e6000e;
+    
+  }
+  
+  
+  .button_text::after {
+    visibility: hidden;
+    transition: all 1s;
+    opacity: 0;
+  }
+  
+  .button--loading::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+  }
+  
+  @keyframes button-loading-spinner {
+    from {
+      transform: rotate(0turn);
+    }
+  
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  
 
 .mailbox {
     display: block;
@@ -114,26 +160,23 @@ margin-bottom: 28px;
 
 width: 53px;
 height: 14px;
+font-weight: 1px;
+font-family: 'Roboto@wght100', sans-serif;
 
-font-family: sans-serif;
-font-style: Helvetica;
-font-weight: 400;
 font-size: 12px;
 line-height: 14px;
 }
 
 .serdel {
     display: block;
-    padding-left: 2%;
+    padding-right: 30%;
     margin-right: auto;
-    padding-top: 2%;
 
 width: 53px;
 height: 14px;
 
-font-family: sans-serif;
-font-style: Helvetica;
-font-weight: 400;
+font-family: 'Roboto@wght100', sans-serif;
+font-weight: 100;
 font-size: 12px;
 line-height: 14px;
 color: #E50000;
@@ -204,3 +247,4 @@ color: #E50000;
 .mailboxparowka{
     color: #E50000;
 }
+
