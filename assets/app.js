@@ -1,62 +1,57 @@
 window.addEventListener('DOMContentLoaded', function(e) {
-    const form = document.getElementById('formularz')
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-            var mail = document.getElementById('mailbox');
-            console.log("e-mail: "+mail.value);
-            var password = document.getElementById('passwordbox');
-            console.log("haslo: "+password.value);
-            var mailFeedback = document.getElementById("mail-feedback");
-            var passwordFeedback = document.getElementById("password-feedback");
-            var labelFeedback = document.getElementById('label')
+   const form = document.getElementById('formularz')
+   form.addEventListener('submit', (e) => {
+       e.preventDefault();
+           var mail = document.getElementById('mailbox');
+           console.log("e-mail: "+mail.value);
+           var password = document.getElementById('passwordbox');
+           console.log("haslo: "+password.value);
+           var mailFeedback = document.getElementById("mail-feedback");
+           var passwordFeedback = document.getElementById("password-feedback");
+           var labelFeedback = document.getElementById('label');
+           var labelFeedback2 = document.getElementById('label2')
 
-            if(validate.empty(mail.value)) {
-                mailFeedback.innerText="Pole e-mail nie może byc puste.";
-                mailFeedback.classList.remove('hidden')
-                mail.classList.add('parowka')
-                labelFeedback.classList.remove('label')
-                labelFeedback.classList.add('paroweczka')
-            }
+           if(validate.empty(mail.value)) {
+               mailFeedback.innerText="Pole e-mail nie może byc puste.";
+               mailFeedback.classList.remove('hidden')
+               mail.classList.add('parowka')
+               labelFeedback.classList.remove('label')
+               labelFeedback.classList.add('paroweczka')
+           }
 
-            if(validate.isMail(mail.value)) {
-                mailFeedback.innerText="To nie jest prawidłowy format e-maila";
-                mailFeedback.classList.remove('hidden')
-                mail.classList.add('parowka')
-                labelFeedback.classList.remove('label')
-                labelFeedback.classList.add('paroweczka')
-            }
+           if(validate.isMail(mail.value)) {
+               mailFeedback.innerText="To nie jest prawidłowy format e-maila";
+               mailFeedback.classList.remove('hidden')
+               mail.classList.add('parowka')
+               labelFeedback.classList.remove('label')
+               labelFeedback.classList.add('paroweczka')
+           }
 
-            if(validate.minLength(password.value, 6)) {
-                passwordFeedback.innerText="hasło jest za krótkie";
-                passwordFeedback.classList.remove('hidden')
-                password.classList.add('parowka')
-                labelFeedback.classList.remove('label')
-                labelFeedback.classList.add('paroweczka')
+           if(validate.minLength(password.value, 6)) {
+               passwordFeedback.innerText="To hasło jest za krótkie.";
+               passwordFeedback.classList.remove('hidden')
+               password.classList.add('parowka')
+               labelFeedback2.classList.remove('label')
+               labelFeedback2.classList.add('paroweczka')
+           }
 
-            }
-
-            
-    });
+           
+   });
 })
 
 
 
 var validate = {
-    empty: function(value) {
-        return !value.length 
-    },
+   empty: function(value) {
+       return !value.length 
+   },
 
-    isMail: function(value) {
-        return /^(?=(\".*?\"|[^\r\n\"]+)@)(?!.*?@(\..*?\.|\..*?|.*?\.|.{256,})$)(?=(.*?@([a-z0-9\-]{1,63}\.)+|^)[a-z0-9\-\.]{1,64}$)((?!\.|^.*?\.{2,}.*?@)[a-z0-9_\-\.\"!#$%&'*+ \/=?^`{|}~]{1,64}@(?<!\.@)(?!\-|.*?(\.\.|@).*?)([^\.]{1,63}|([a-z0-9\-\.]{1,63})+)(?<!\-)\.[a-z\d\-]{2,24})$/.test(value);
-    },
+   isMail: function(mail) {
+      var re = /\S+@\S+\.\S+/;
+      return re.test(mail);
+   },
 
-    minLength: function(value, min) {
-        return value.length >= min
-    }
+   minLength: function(value, min) {
+       return value.length <= min
+   }
 }
-
-
-// to na dole jest do walidacji, jutro trzeba ogarnac tak:
-// stylowanie pozostalych boxow
-// ogarniecie gotowych pakietow do wysylki na serwer
-//i to tyle chyba chyba essss pdw pdw pozdrowienia do wiezieniea
